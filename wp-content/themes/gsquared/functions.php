@@ -24,6 +24,34 @@ function gsquared_register_styles()
 
 add_action("wp_enqueue_scripts", "gsquared_register_styles");
 
+function gsquared_register_scripts()
+{
+  wp_enqueue_script(
+    "main",
+    get_template_directory_uri() . "/assets/js/main.js",
+    [],
+    "1.0",
+    true
+  );
+}
+
+add_action("wp_enqueue_scripts", gsquared_register_scripts());
+
+add_action("widgets_init", "register_footer_sidebar");
+function register_footer_sidebar()
+{
+  register_sidebar([
+    "id" => "footer",
+    "name" => __("Footer Sidebar"),
+    "description" => __("A Sidebar for the FAQ"),
+    "before_widget" =>
+      "<h2>Frequently Asked Questions</h2><h3>Fleetwood $50 Cashback Program</h3>",
+    "after_widget" => "",
+    "before_title" => "",
+    "after_title" => "",
+  ]);
+}
+
 function exists_in_db($invoice_number)
 {
   global $wpdb;

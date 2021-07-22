@@ -1,10 +1,4 @@
-<?php
+<div class="sidebar">
+    <?php dynamic_sidebar("sidebar-1"); ?>
+</div>
 
-if (is_active_sidebar("sidebar-1")): ?>
-
-	<aside class="widget-area">
-		<?php dynamic_sidebar("sidebar-1"); ?>
-	</aside>
-
-<?php endif;
-?>

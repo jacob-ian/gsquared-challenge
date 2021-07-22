@@ -1,0 +1,539 @@
+/* CSS */
+.easy-faq{
+    padding: 10px;
+	margin: 10px auto;
+}
+
+.easy-faq-title {
+    border-bottom: 1px solid #D3D3D3;
+	box-sizing: border-box;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-bottom: 3px;
+    text-decoration: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.easy-faq .easy-faq-featured-image img {
+	max-width: 100%;
+	height: auto;
+	margin: 20px auto;
+}
+
+.easy-faq .easy-faq-body {
+	box-sizing: border-box;
+    margin-bottom: 35px;
+    padding-left: 20px;
+}
+
+.easy-faq .easy-faq-body p {
+    width: 100%;
+}
+
+.easy-faq .easy-faq-body p a {
+}
+
+.easy-faq p a:hover{
+}
+
+.widgets .easy-faq{
+	margin: 5px auto;
+}
+.easy-faq-questions	{
+	padding: 10px 0;
+	display: inline-block;
+	float: left;
+	color: #00af41;
+	padding: 10px 0;
+	font-size: 16px;
+}
+.easy-faq-questions li	{
+	padding: 5px 0;
+}
+.quick-links	{
+	border-bottom: 1px solid #000;
+	font-size: 32px;
+	padding: 60px 0 20px 0;
+}
+.faq-questions	{
+	display: inline-block;
+}
+.faq_scroll:hover	{
+	cursor: pointer;
+}
+
+/* highlight search terms */
+.easy-faqs-wrapper .search_highlight {
+    background-color: lightgreen;
+}
+
+/* Search Form Styles */
+.easy_faqs_search_form > form
+{
+	display: block;
+	margin-bottom: 40px;
+}
+
+.easy_faqs_search_form #search_faqs {
+    box-sizing: border-box;
+    display: block;
+    height: 48px;
+    padding: 5px 11px;
+    width: 100%;
+}
+
+.easy_faqs_search_form form.show_category_select #search_faqs {
+    display: inline-block;
+    width: 65%;
+}
+
+.easy_faqs_search_form #search_faqs_category {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 48px;
+    padding: 5px 11px;
+    margin-left: 5px;
+    width: 30%;
+}
+@media only screen and (max-width: 500px) {
+	.easy_faqs_search_form form.show_category_select #search_faqs {
+		margin-bottom: 12px;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.easy_faqs_search_form #search_faqs_category {
+		margin-left: 0;
+		margin-bottom: 12px;
+		width: 100%;
+	}
+}
+
+
+.easy_faqs_search_form.show_category_select .search_inputs {
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* Accordion CSS */
+.easy-faqs-accordion .easy-faq .easy-faq-body,
+.easy-faqs-accordion-collapsed .easy-faq  .easy-faq-body{
+	display: none;
+}
+
+.easy-faqs-accordion .easy-faq:nth-child(1) .easy-faq-body{
+	display: block;
+}
+
+.easy_faqs_category_wrapper h2.ui-accordion-header{
+	cursor: pointer;
+}
+
+.easy_faqs_category_wrapper h2.ui-accordion-header::before {
+    content: "+";
+}
+
+.easy_faqs_category_wrapper h2.ui-accordion-header-active::before {
+    content: "-";
+}
+
+/* Submission Form */
+.easy_faqs_error{
+	color: red;
+}
+.easy_faqs_field_wrap_error {
+    border: 1px solid red;
+    padding: 10px 10px 0;
+	margin-bottom: 10px;
+}
+
+.easy-faqs-title-after,
+.easy-faqs-title-before {
+	display: none;
+}
+
+/* Themes */
+
+/* All Themes - Base Styles */
+div[class^="easy-faqs-theme-"],
+div[class*=" easy-faqs-theme-"] {
+	margin-bottom: 20px;
+}
+
+.easy-faqs-wrapper *, .easy-faqs-wrapper *::before, .easy-faqs-wrapper *::after {
+    box-sizing: border-box;
+}
+
+.easy-faqs-wrapper .easy-faq-body > *:first-child {
+    margin-top: 0;
+}
+
+div[class^="easy-faqs-theme-"] .easy-faq,
+div[class*=" easy-faqs-theme-"] .easy-faq {
+	margin-top: 0;
+	margin-bottom: 20px; /* normal (no accordion), needs a little spacing */
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+div[class^="easy-faqs-theme-"] .easy-faq-title,
+div[class*=" easy-faqs-theme-"] .easy-faq-title {
+	display: table;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    min-height: 40px;
+    line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 0px;
+	position: relative;
+	width: 100%;
+}
+
+div[class^="easy-faqs-theme-"] .easy-faq-title.ui-accordion-header-active,
+div[class*=" easy-faqs-theme-"] .easy-faq-title.ui-accordion-header-active {
+	margin-bottom: 0;
+}
+
+div[class^="easy-faqs-theme-"] .easy-faqs-title-text,
+div[class*=" easy-faqs-theme-"] .easy-faqs-title-text {
+    display: table-cell;
+    height: 40px;
+    line-height: 1.5;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+/* All Themes - Content Fixes */
+div[class^="easy-faqs-theme-"] .easy-faq-body img,
+div[class*=" easy-faqs-theme-"] .easy-faq-body img {
+	max-width: 100%;
+	height: auto;
+}
+
+div[class^="easy-faqs-theme-"] .easy-faq-body ol,
+div[class*=" easy-faqs-theme-"] .easy-faq-body ol {
+	list-style-position: inside;
+}
+
+
+/* office - all */
+.easy-faqs-theme-office {
+}
+
+.easy-faqs-wrapper.easy-faqs-theme-office .easy-faq {
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #999999;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.ui-accordion.easy-faqs-theme-office .easy-faq {
+	border-bottom-width: 0;
+}
+
+.ui-accordion.easy-faqs-theme-office .easy-faq:last-child {
+	border-bottom-width: 1px;
+}
+
+
+/* accordion version has less space between faqs (only 2px) */
+.ui-accordion.easy-faqs-theme-office .easy-faq {
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+.easy-faqs-wrapper.easy-faqs-theme-office .easy-faq-title {
+	border-bottom: 0 none;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: 0 40px 0 10px;
+}
+
+.easy-faqs-wrapper.easy-faqs-theme-office.easy-faqs-no-ac .easy-faq-title {
+	padding: 0 10px 0 10px;
+}
+
+
+.ui-accordion.easy-faqs-theme-office .easy-faqs-title-after {
+	background-image: url('../img/theme-sprite-black-triangles.png');
+	background-position: 2px 0;
+	background-repeat: no-repeat;
+	display: block;
+    height: 12px;
+    position: absolute;
+    right: 4px;
+    top: 15px;
+    width: 14px;
+}
+
+.easy-faqs-theme-office .easy-faq-title.ui-accordion-header-active .easy-faqs-title-after {
+	background-position: 0 -18px;
+}
+
+.easy-faqs-theme-office .easy-faq-body {
+	background-color: white;
+	border-top: 0;
+	color: #555555;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin-bottom: 0;
+	padding: 20px;
+}
+
+/* office - gray */
+.easy-faqs-theme-office-gray .easy-faq {
+	background-color: #e5e5e5;
+}
+
+.easy-faqs-theme-office-gray .easy-faq-title {
+	color: #000;
+}
+
+.easy-faqs-theme-office-gray .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-gray .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #e5e5e5;
+}
+
+.ui-accordion.easy-faqs-theme-office-gray .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #f5f5f5;
+}
+
+/* office - red */
+.easy-faqs-theme-office-red .easy-faq {
+	background-color: #ffc1b4;
+}
+
+.easy-faqs-theme-office-red .easy-faq-title {
+	background-color: #ffc1b4;
+	color: #000;
+}
+
+.easy-faqs-theme-office-red .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-red .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #ffc1b4;
+}
+
+.ui-accordion.easy-faqs-theme-office-red .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #fff3f1;
+}
+
+/* office - green */
+.easy-faqs-theme-office-green .easy-faq {
+	background-color: #baffd7;
+}
+
+.easy-faqs-theme-office-green .easy-faq-title {
+	background-color: #baffd7;
+	color: #000;
+}
+
+.easy-faqs-theme-office-green .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-green .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #baffd7;
+}
+
+.ui-accordion.easy-faqs-theme-office-green .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #eefff5;
+}
+
+/* office - blue */
+.easy-faqs-theme-office-blue .easy-faq {
+	background-color: #badeff;
+}
+
+.easy-faqs-theme-office-blue .easy-faq-title {
+	background-color: #badeff;
+	color: #000;
+}
+
+.easy-faqs-theme-office-blue .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-blue .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #badeff;
+}
+
+.ui-accordion.easy-faqs-theme-office-blue .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #edf6ff;
+}
+
+/* office - purple */
+.easy-faqs-theme-office-purple .easy-faq {
+	background-color: #e3baff;
+}
+
+.easy-faqs-theme-office-purple .easy-faq-title {
+	background-color: #e3baff;
+	color: #000;
+}
+
+.easy-faqs-theme-office-purple .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-purple .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #e3baff;
+}
+
+.ui-accordion.easy-faqs-theme-office-purple .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #fdeeff;
+}
+
+/* office - skyblue */
+.easy-faqs-theme-office-skyblue .easy-faq {
+	background-color: #baf9ff;
+}
+
+.easy-faqs-theme-office-skyblue .easy-faq-title {
+	background-color: #baf9ff;
+	color: #000;
+}
+
+.easy-faqs-theme-office-skyblue .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-skyblue .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #baf9ff;
+}
+
+.ui-accordion.easy-faqs-theme-office-skyblue .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #edfeff;
+}
+
+/* office - teal */
+.easy-faqs-theme-office-teal .easy-faq {
+	background-color: #bafff8;
+}
+
+.easy-faqs-theme-office-teal .easy-faq-title {
+	background-color: #bafff8;
+	color: #000;
+}
+
+.easy-faqs-theme-office-teal .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-teal .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #bafff8;
+}
+
+.ui-accordion.easy-faqs-theme-office-teal .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #edfffd;
+}
+
+/* office - gold */
+.easy-faqs-theme-office-gold .easy-faq {
+	background-color: #fffcba;
+}
+
+.easy-faqs-theme-office-gold .easy-faq-title {
+	background-color: #fffcba;
+	color: #000;
+}
+
+.easy-faqs-theme-office-gold .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-gold .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #fffcba;
+}
+
+.ui-accordion.easy-faqs-theme-office-gold .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #fffeed;
+}
+
+/* office - manilla */
+.easy-faqs-theme-office-manilla .easy-faq {
+	background-color: #ffedba;
+}
+
+.easy-faqs-theme-office-manilla .easy-faq-title {
+	background-color: #ffedba;
+	color: #000;
+}
+
+.easy-faqs-theme-office-manilla .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-manilla .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #ffedba;
+}
+
+.ui-accordion.easy-faqs-theme-office-manilla .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #fffaed;
+}
+
+/* office - orange */
+.easy-faqs-theme-office-orange .easy-faq {
+	background-color: #ffd5ba;
+}
+
+.easy-faqs-theme-office-orange .easy-faq-title {
+	background-color: #ffd5ba;
+	color: #000;
+}
+
+.easy-faqs-theme-office-orange .easy-faq-title.ui-accordion-header-active {
+	border-bottom: 1px dashed #999999;
+}
+
+.easy-faqs-theme-office-orange .easy-faq:nth-child(odd) .easy-faq-title {
+	background-color: #ffd5ba;
+}
+
+.ui-accordion.easy-faqs-theme-office-orange .easy-faq:nth-child(even) .easy-faq-title {
+	background-color: #fff5ed;
+}
+
+/* default style (updated) */
+.easy-faqs-wrapper.easy-faqs-theme-default_style {
+
+}
+
+.easy-faqs-wrapper.easy-faqs-theme-default_style .easy-faq-title {
+	font-weight: bold;
+}
+
+.easy-faqs-wrapper.easy-faqs-theme-default_style .easy-faq-body {
+	margin-top: 20px;
+}
+
+/* Inline feedback */
+.easy-faqs-inline-feedback {
+	
+}
+.easy-faqs-inline-feedback p {
+	font-size: .8em;
+	margin-bottom: 12px;
+}
+
+.easy_faqs_feedback_message {
+	margin-bottom: 12px;
+}
+
+.easy_faqs_voting {
+	margin: 0 0 14px;
+}
+
+button.easy_faqs_vote_link {
+	padding: 7px 12px;
+}

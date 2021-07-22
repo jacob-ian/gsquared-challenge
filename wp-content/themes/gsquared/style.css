@@ -6,6 +6,10 @@ Description: A theme for the cashback program.
 Version: 1.0
 
 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html, body {
   width: 100%;
   margin: 0;
@@ -55,7 +59,8 @@ input[type="submit"][disabled] {
 }
 
 .drag-drop-file {
-  display: none;
+  margin-top: 15px;
+  font: inherit;
 }
 
 .header {
@@ -85,7 +90,7 @@ input[type="submit"][disabled] {
 
 .page {
   flex: 1;
-  max-width: 45%;
+  max-width: 60%;
   padding: 65px 95px ;
   background: #fbfbfb;
   height: 100px;
@@ -123,6 +128,10 @@ input[type="submit"][disabled] {
   .page label {
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  .page form h3 {
+    text-align: left;
   }
 
   .page .form-row {
@@ -192,8 +201,93 @@ input[type="submit"][disabled] {
 
   .page .form-row input[type="submit"] {
     flex: 0;
-    order: 2
+    order: 2;
   }
+
+.sidebar-footer {
+  background: white;
+  width: 100%;
+  padding: 40px 0;
+  
+}
+
+.sidebar-footer h2,h3 {
+  text-align: center
+}
+
+.sidebar-footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0
+}
+
+.sidebar-footer h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-top: 10px
+}
+
+.easy-faqs-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.easy-faq {
+  width: 60%;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.easy-faq .easy-faq-title {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: none;
+  position: relative;
+  padding-right: 45px;
+}
+
+.easy-faq-title::after {
+  content:"";
+  background-image: url('/wp-content/themes/gsquared/assets/images/open.png');;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+}
+
+.easy-faq.opened .easy-faq-title {
+  border-bottom: 1px solid black;
+}
+
+.easy-faq.opened .easy-faq-title::after {
+  background-image: url('/wp-content/themes/gsquared/assets/images/close.png')
+}
+
+.easy-faq.opened .easy-faq-body {
+  display: block;
+}
+
+.easy-faq .easy-faq-body {
+  display: none;
+  padding: 30px 30px;
+  background-color: #f8f8f8;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
 
 .footer {
   justify-self: flex-end;
@@ -245,6 +339,10 @@ input[type="submit"][disabled] {
 
   .page .form-row input {
     margin-bottom: 5px
+  }
+
+  .easy-faq {
+    width: 90%
   }
 
   .footer {
