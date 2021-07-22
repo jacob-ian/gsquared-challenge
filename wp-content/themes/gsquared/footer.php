@@ -1,14 +1,11 @@
-<?php
-$logo = get_template_directory_uri() . "/assets/images/corporate-logo.png"; ?>
+  </main>
 
-  
-</main>
-<div class="faq">
-  
-</div>
+<?php get_template_part("template-parts/footer/footer-widgets.php"); ?>
 
 <footer class="footer">
-  <img class="footer-logo" alt="Corporate Credit Cards" src="<?php echo $logo; ?>"/>
+  <?php $logo =
+    get_template_directory_uri() . "/assets/images/corporate-logo.png"; ?>
+  <img class="footer-logo" alt="Corporate Credit Cards" src="<?php echo $logo; ?>" />
 
 </footer>
 
